@@ -94,7 +94,7 @@ SELECT  count(*)total_records FROM invoices CROSS JOIN invoice_items ;
 
 ```
    
-   
+```   
    
 2.  Find the total number of invoices for each customer along with the customer's full name, city and email.
     After running the query described above, what is the email address of the 5th person, František Wichterlová? Enter the answer below (feel free to copy and paste).
