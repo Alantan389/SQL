@@ -134,6 +134,7 @@ SELECT M.LastName Manager_Last_Name , E.LastName Employee_Last_Name
 FROM Employees E 
 LEFT JOIN Employees M    
 ON E.ReportsTo=M.EmployeeID;
+
 <img width="323" alt="Screen Shot 2022-03-06 at 8 20 48 PM" src="https://user-images.githubusercontent.com/25523756/156967735-a27aef4c-a081-443a-9a7c-d6b2b2243af7.png">
 
 
@@ -148,6 +149,7 @@ SELECT Al.AlbumID, Al.Title, Ar.ArtistId, Ar.Name
 FROM Artists Ar LEFT JOIN Albums Al 
 ON Ar.ArtistId = Al.ArtistId
 WHERE Al.Title is NULL
+
 <img width="457" alt="Screen Shot 2022-03-06 at 8 21 07 PM" src="https://user-images.githubusercontent.com/25523756/156967748-741812ce-7142-4845-b804-b770dcb3bbb9.png">
 
 
@@ -164,6 +166,7 @@ UNION
 select c.FirstName, c.LastName
 from Customers c
 order by c.LastName DESC
+
 <img width="376" alt="Screen Shot 2022-03-06 at 8 21 19 PM" src="https://user-images.githubusercontent.com/25523756/156967768-ff435fe7-8868-4f48-b2d4-934fc54480b5.png">
 
 
@@ -173,6 +176,7 @@ order by c.LastName DESC
 
 
 7. See if there are any customers who have a different city listed in their billing city versus their customer city.
+
 <img width="163" alt="Screen Shot 2022-03-06 at 8 21 29 PM" src="https://user-images.githubusercontent.com/25523756/156967779-ea49a3e0-338d-4045-9c33-23775447fd03.png">
 
 
