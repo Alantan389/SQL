@@ -122,6 +122,7 @@ INNER JOIN Albums A ON A.AlbumId=T.AlbumId
 INNER JOIN Artists R ON R.ArtistId=A.ArtistId;
 
 <img width="768" alt="Screen Shot 2022-03-06 at 8 20 39 PM" src="https://user-images.githubusercontent.com/25523756/156967694-68b2abd6-cf63-47d8-99bf-9e7ae23ac7ee.png">
+
 ```
    
 ```  
