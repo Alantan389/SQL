@@ -92,7 +92,7 @@ SELECT  count(*)total_records FROM invoices CROSS JOIN invoice_items ;
    FROM Albums a WHERE a.Title='Californication');
   <img width="379" alt="Screen Shot 2022-03-06 at 8 13 51 PM" src="https://user-images.githubusercontent.com/25523756/156967647-7fba048d-b2f3-47c9-802a-ccfd2fbb3cdf.png">
 
-
+```
    
    
    
