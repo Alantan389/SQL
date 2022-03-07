@@ -141,6 +141,7 @@ LEFT JOIN Employees M
 ON E.ReportsTo=M.EmployeeID;
 
 <img width="323" alt="Screen Shot 2022-03-06 at 8 20 48 PM" src="https://user-images.githubusercontent.com/25523756/156967735-a27aef4c-a081-443a-9a7c-d6b2b2243af7.png">
+
 ```
    
 ```  
@@ -158,6 +159,7 @@ ON Ar.ArtistId = Al.ArtistId
 WHERE Al.Title is NULL
 
 <img width="457" alt="Screen Shot 2022-03-06 at 8 21 07 PM" src="https://user-images.githubusercontent.com/25523756/156967748-741812ce-7142-4845-b804-b770dcb3bbb9.png">
+
 
 ```
    
@@ -177,6 +179,7 @@ from Customers c
 order by c.LastName DESC
 
 <img width="376" alt="Screen Shot 2022-03-06 at 8 21 19 PM" src="https://user-images.githubusercontent.com/25523756/156967768-ff435fe7-8868-4f48-b2d4-934fc54480b5.png">
+
 
 ```
    
