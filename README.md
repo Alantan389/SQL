@@ -196,5 +196,15 @@ order by c.LastName DESC
 
 
 
+```
+------------------------------------------------------------------------------------------
+```
+
+![ChinookDatabaseSchema](https://user-images.githubusercontent.com/25523756/158047849-d210fe90-5037-4f1d-ba43-1cf9d5da29fb.png)
+
+
+```
+```
+
 
 
