@@ -206,5 +206,91 @@ order by c.LastName DESC
 ```
 ```
 
+1. Pull a list of customer ids with the customer’s full name, and address, along with combining their city and country together. Be sure to make a space in between these two and make it UPPER CASE. (e.g. LOS ANGELES USA)
+
+
+SELECT C.CustomerId,C.FirstName,C.LastName,C.Address,
+C.Country,C.City FROM Customers C;
+
+<img width="619" alt="Screen Shot 2022-03-12 at 10 33 48 PM" src="https://user-images.githubusercontent.com/25523756/158048312-08584121-f156-443c-9f83-b4038f1437d3.png">
+
+
+
+
+
+2. Create a new employee user id by combining the first 4 letters of the employee’s first name with the first 2 letters of the employee’s last name. Make the new field lower case and pull each individual step to show your work.
+
+SELECT C.FirstName, SUBSTR(C.FirstName,1,4) AS First4,
+C.LastName,SUBSTR(C.LastName, 1,2) AS Last2,
+LOWER(SUBSTR(C.FirstName,1,4)|| SUBSTR(C.LastName,1,2))
+AS New_Employee_User FROM Customers c;
+
+<img width="510" alt="Screen Shot 2022-03-12 at 10 34 08 PM" src="https://user-images.githubusercontent.com/25523756/158048323-181c7c41-9e54-4297-b2e7-396b4d0f4275.png">
+
+
+
+
+
+3.Show a list of employees who have worked for the company for 15 or more years using the current date function. Sort by lastname ascending.
+
+SELECT E.LastName,E.FirstName,Date('now')-E.HireDate
+AS Years_Hired FROM Employees E WHERE
+Years_Hired >= 15
+ORDER BY E.LastName ASC
+
+<img width="290" alt="Screen Shot 2022-03-12 at 10 34 19 PM" src="https://user-images.githubusercontent.com/25523756/158048326-56002214-aa31-484a-8b24-cebbaaa16da0.png">
+
+
+
+
+
+4.Profiling the Customers table, answer the following question.
+
+SELECT C.PostalCode,C.Address,C.Company,C.Fax,
+C.Phone,C.FirstName FROM Customers C
+WHERE PostalCode is Null
+
+<img width="597" alt="Screen Shot 2022-03-12 at 10 35 22 PM" src="https://user-images.githubusercontent.com/25523756/158048333-4f12970d-3ce0-4cf4-b5c2-76c7d8f01b12.png">
+
+
+
+
+
+
+5. Find the cities with the most customers and rank in descending order.
+
+SELECT C.City,COUNT(C.CustomerId)
+FROM Customers C
+GROUP BY C.City
+ORDER BY COUNT(C.CustomerId)
+DESC
+
+<img width="345" alt="Screen Shot 2022-03-12 at 10 35 35 PM" src="https://user-images.githubusercontent.com/25523756/158048340-521a17c1-9532-4c87-ba76-b089de7644f4.png">
+
+
+
+
+
+6. Create a new customer invoice id by combining a customer’s invoice id with their first and last name while ordering your query in the following order: firstname, lastname, and invoiceID.
+
+SELECT C.FirstName || C.LastName || I.InvoiceId 
+AS NEW_Invoice_ID
+FROM Customers C INNER JOIN Invoices I 
+ON C.CustomerID=I.CustomerId
+WHERE NEW_Invoice_ID LIKE  "AstridGruber%"
+
+
+<img width="162" alt="Screen Shot 2022-03-12 at 10 35 47 PM" src="https://user-images.githubusercontent.com/25523756/158048343-3fe016c9-1e8a-4054-b2b2-d3f26a134794.png">
+
+
+
+
+
+
+
+
+
+
+
 
 
